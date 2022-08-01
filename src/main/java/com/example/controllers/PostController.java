@@ -26,7 +26,7 @@ public class PostController {
     private String path;
 
     @PostMapping("/upload")
-    public Post uplaodImage(@RequestParam(value = "file", required = false) MultipartFile file, @RequestParam("content") String content)
+    public Post uplaodFile(@RequestParam(value = "file", required = false) MultipartFile file, @RequestParam("content") String content)
             throws IOException {
 
         if (!(file == null)) {
